@@ -13,6 +13,6 @@ public class PostDetailServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("/posts/view doGet() 메서드 호출: 특정 id를 갖는 게시물 조회");
-        super.doGet(req, resp);
+        req.getRequestDispatcher("/WEB-INF/views/detail.jsp").forward(req, resp);
     }
 }

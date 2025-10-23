@@ -13,5 +13,10 @@
 </head>
 <body>
     <h1>Post Form Page</h1>
+    <form method="post">
+        <button type="submit" formaction="save">작성</button>
+        <button type="submit" formaction="update">수정</button>
+        <button type="submit" formaction="delete">삭제</button>
+    </form>
 </body>
 </html>

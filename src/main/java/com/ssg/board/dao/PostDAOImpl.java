@@ -1,6 +1,10 @@
 package com.ssg.board.dao;
 
 import com.ssg.board.dto.PostDTO;
+import com.ssg.board.util.DBUtil;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.List;
 import java.util.Optional;
 
@@ -10,6 +14,14 @@ public enum PostDAOImpl implements PostDAO {
 
     @Override
     public List<PostDTO> findAll(int page, int size) {
+        String sql = "select * from board limit ?";
+        try (Connection connection = DBUtil.INSTANCE.getConnection();
+                PreparedStatement pstmt = connection.prepareStatement(sql);
+                ResultSet rs = pstmt.executeQuery()) {
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         return null;
     }
 

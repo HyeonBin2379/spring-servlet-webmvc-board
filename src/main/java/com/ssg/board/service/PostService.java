@@ -1,15 +1,28 @@
 package com.ssg.board.service;
 
+import com.ssg.board.dao.PostDAO;
+import com.ssg.board.dao.PostDAOImpl;
 import com.ssg.board.dto.PostDTO;
 
 import java.util.List;
 
 public class PostService {
 
-//    private final PostDAO dao;
+    private static class LazyHolder {
+        private static final PostService INSTANCE = new PostService();
+    }
+    private final PostDAO dao;
+
+    private PostService() {
+        this.dao = PostDAOImpl.INSTANCE;
+    }
+
+    public static PostService getInstance() {
+        return LazyHolder.INSTANCE;
+    }
 
     public List<PostDTO> getList(int page, int size) {
-        return null;
+        return dao.findAll(page, size);
     }
 
     public PostDTO getDetail(long id) {

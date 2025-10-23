@@ -13,5 +13,11 @@
 </head>
 <body>
     <h1>Post List Page</h1>
+    <ul>
+        <c:forEach var="dto" items="${list}">
+            <li>${dto}</li>
+        </c:forEach>
+    </ul>
+    <button type="button" onclick="location.href='posts/new'">글쓰기</button>
 </body>
 </html>

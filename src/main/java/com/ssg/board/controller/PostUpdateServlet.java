@@ -13,6 +13,6 @@ public class PostUpdateServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("/posts/update doPost() 메서드 호출: 비밀번호 확인 후 업데이트");
-        super.doPost(req, resp);
+        resp.sendRedirect("/posts/view");
     }
 }

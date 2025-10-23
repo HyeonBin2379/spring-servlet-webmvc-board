@@ -1,5 +1,9 @@
 package com.ssg.board.controller;
 
+import com.ssg.board.dao.PostDAO;
+import com.ssg.board.dto.PostDTO;
+import com.ssg.board.service.PostService;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,6 +13,7 @@ import java.io.IOException;
 
 @WebServlet(name = "postListServlet", urlPatterns = "/posts")
 public class PostListServlet extends HttpServlet {
+
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

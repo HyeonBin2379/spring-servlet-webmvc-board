@@ -13,5 +13,6 @@
 </head>
 <body>
     <h1>Post View Page</h1>
+    <button type="button" onclick="location.href='edit'">수정/삭제</button>
 </body>
 </html>
