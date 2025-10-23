@@ -25,7 +25,7 @@ public enum DBUtil {
         config.addDataSourceProperty("prepStmtCacheSize", "250");
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
 
-        ds = new HikariDataSource(config);
+        this.ds = new HikariDataSource(config);
     }
 
     // ConnectionUtil.INSTANCE.getConnection()으로 Connection을 반환받음
