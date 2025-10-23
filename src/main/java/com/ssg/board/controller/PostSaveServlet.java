@@ -12,6 +12,7 @@ public class PostSaveServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("/posts/save doPost() 메서드 호출: 작성한 게시글 검증");
         super.doPost(req, resp);
     }
 }
