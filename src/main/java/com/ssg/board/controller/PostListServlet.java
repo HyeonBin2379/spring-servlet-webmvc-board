@@ -13,6 +13,6 @@ public class PostListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("/posts doGet() 메서드 호출: 최신순 목록 조회");
-        super.doGet(req, resp);
+        req.getRequestDispatcher("/WEB-INF/views/list.jsp").forward(req, resp);
     }
 }

@@ -13,6 +13,6 @@ public class PostEditFormServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("/posts/edit doGet() 메서드 호출: 기존 값에 바인딩된 폼 출력");
-        super.doGet(req, resp);
+        req.getRequestDispatcher("/WEB-INF/views/form.jsp").forward(req, resp);
     }
 }
