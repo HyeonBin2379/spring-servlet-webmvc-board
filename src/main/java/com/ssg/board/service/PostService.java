@@ -17,7 +17,7 @@ public enum PostService {
     private final PostDAO dao;
     private final ModelMapper modelMapper;
 
-    private PostService() {
+    PostService() {
         this.dao = PostDAOImpl.INSTANCE;
         this.modelMapper = MapperUtil.INSTANCE.get();
     }

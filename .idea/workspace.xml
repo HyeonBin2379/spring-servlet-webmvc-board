@@ -10,16 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5106b48-66a9-4a2f-95e5-a4a755b66107" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/util/MapperUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/log4j2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PostDAOTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/domain/PostVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/domain/PostVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/dto/PostDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/dto/PostDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +95,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/study/spring/board/src/main/webapp/resources",
+    "last_opened_file_path": "C:/study/spring/board/src/test/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,6 +114,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\study\spring\board\src\test\resources" />
       <recent name="C:\study\spring\board\src\main\webapp\resources" />
       <recent name="C:\study\spring\board\src\main\webapp" />
       <recent name="C:\study\sql\servletExercise" />
@@ -331,7 +324,7 @@
       <workItem from="1761211459808" duration="4488000" />
       <workItem from="1761264886248" duration="2531000" />
       <workItem from="1761296994737" duration="495000" />
-      <workItem from="1761297995186" duration="3094000" />
+      <workItem from="1761297995186" duration="5127000" />
     </task>
     <servers />
   </component>
