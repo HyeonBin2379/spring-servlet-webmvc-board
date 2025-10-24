@@ -45,38 +45,38 @@ public enum PostDAOImpl implements PostDAO {
         String sql = "select * from board_post where post_id = ?";
         PostVO postVO = null;
         try (Connection connection = DBUtil.INSTANCE.getConnection();
-             PreparedStatement pstmt = connection.prepareStatement(sql);
-             ResultSet rs = pstmt.executeQuery()) {
+             PreparedStatement pstmt = connection.prepareStatement(sql)) {
+            pstmt.setLong(1, id);
 
-            if (rs.next()) {
-                postVO = PostVO.builder()
-                        .postId(rs.getLong("post_id"))
-                        .title(rs.getString("title"))
-                        .content(rs.getString("content"))
-                        .writer(rs.getString("writer"))
-                        .passphrase(rs.getString("passphrase"))
-                        .createdAt(rs.getTimestamp("created_at").toLocalDateTime())
-                        .updatedAt(rs.getTimestamp("updated_at").toLocalDateTime())
-                        .build();
+            try (ResultSet rs = pstmt.executeQuery()) {
+                if (rs.next()) {
+                    postVO = PostVO.builder()
+                            .postId(rs.getLong("post_id"))
+                            .title(rs.getString("title"))
+                            .content(rs.getString("content"))
+                            .writer(rs.getString("writer"))
+                            .passphrase(rs.getString("passphrase"))
+                            .createdAt(rs.getTimestamp("created_at").toLocalDateTime())
+                            .updatedAt(rs.getTimestamp("updated_at").toLocalDateTime())
+                            .build();
+                }
             }
+            return Optional.ofNullable(postVO);
         } catch (Exception e) {
             log.error(e.getMessage());
+            return Optional.empty();
         }
-        return Optional.ofNullable(postVO);
     }
 
     @Override
     public long save(PostVO post) {
-        String sql = "insert into board_post values(?, ?, ?, ?, ?, ?, ?)";
+        String sql = "insert into board_post(title, content, writer, passPhrase) values(?, ?, ?, ?)";
         try (Connection connection = DBUtil.INSTANCE.getConnection();
              PreparedStatement pstmt = connection.prepareStatement(sql)) {
-            pstmt.setLong(1, post.getPostId());
-            pstmt.setString(2, post.getTitle());
-            pstmt.setString(3, post.getContent());
-            pstmt.setString(4, post.getWriter());
-            pstmt.setString(5, post.getPassphrase());
-            pstmt.setTimestamp(6, Timestamp.valueOf(post.getCreatedAt()));
-            pstmt.setTimestamp(7, Timestamp.valueOf(post.getUpdatedAt()));
+            pstmt.setString(1, post.getTitle());
+            pstmt.setString(2, post.getContent());
+            pstmt.setString(3, post.getWriter());
+            pstmt.setString(4, post.getPassphrase());
 
             int affected = pstmt.executeUpdate();
             return affected > 0 ? post.getPostId() : -1;
