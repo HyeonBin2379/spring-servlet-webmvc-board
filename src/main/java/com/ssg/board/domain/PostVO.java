@@ -1,14 +1,14 @@
 package com.ssg.board.domain;
 
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 
 import java.time.LocalDateTime;
-import lombok.ToString;
 
 @Getter
 @Builder
 @ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class PostVO {
 
     private Long postId;

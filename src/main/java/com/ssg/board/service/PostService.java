@@ -2,27 +2,31 @@ package com.ssg.board.service;
 
 import com.ssg.board.dao.PostDAO;
 import com.ssg.board.dao.PostDAOImpl;
+import com.ssg.board.domain.PostVO;
 import com.ssg.board.dto.PostDTO;
+import com.ssg.board.util.MapperUtil;
+import org.modelmapper.ModelMapper;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
-public class PostService {
+public enum PostService {
 
-    private static class LazyHolder {
-        private static final PostService INSTANCE = new PostService();
-    }
+    INSTANCE;
+
     private final PostDAO dao;
+    private final ModelMapper modelMapper;
 
     private PostService() {
         this.dao = PostDAOImpl.INSTANCE;
+        this.modelMapper = MapperUtil.INSTANCE.get();
     }
 
-    public static PostService getInstance() {
-        return LazyHolder.INSTANCE;
-    }
-
-    public List<PostDTO> getList(int page, int size) {
-        return dao.findAll(page, size);
+    public List<PostDTO> getList() {
+        List<PostVO> postList = dao.findAll();
+        return postList.stream()
+                .map(postVO -> modelMapper.map(postVO, PostDTO.class))
+                .collect(Collectors.toList());
     }
 
     public PostDTO getDetail(long id) {
