@@ -22,6 +22,7 @@ public class PostDetailServlet extends HttpServlet {
         HttpSession session = req.getSession();
         String errorMsg = (String) session.getAttribute("error");
         if (errorMsg != null) {
+            log.error(errorMsg);
             req.setAttribute("error", errorMsg);
             session.removeAttribute("error");
         }

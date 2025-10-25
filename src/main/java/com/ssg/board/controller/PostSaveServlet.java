@@ -36,6 +36,7 @@ public class PostSaveServlet extends HttpServlet {
             PostService.INSTANCE.write(postDTO);
             resp.sendRedirect("/posts");
         } catch (IllegalArgumentException e) {
+            log.error(e.getMessage());
             errors.put("saveError", e.getMessage());
             req.setAttribute("errorMap", errors);
             req.getRequestDispatcher("/WEB-INF/views/error.jsp").forward(req, resp);
@@ -47,15 +48,19 @@ public class PostSaveServlet extends HttpServlet {
 
         if (!written.getTitle().trim().matches(".{2,200}")) {
             errors.put("title", "게시글 제목의 길이가 유효하지 않습니다.");
+            log.error(errors.get("title"));
         }
         if (!written.getWriter().trim().matches(".{1,50}")) {
             errors.put("writer", "작성자의 길이가 유효하지 않습니다.");
+            log.error(errors.get("writer"));
         }
         if (!written.getContent().trim().matches(".{5,}")) {
             errors.put("content", "내용의 길이가 유효하지 않습니다.");
+            log.error(errors.get("content"));
         }
         if (!written.getPassphrase().matches(".{4,20}")) {
             errors.put("passPhrase", "비밀번호의 길이가 유효하지 않습니다.");
+            log.error(errors.get("passPhrase"));
         }
 
         return errors;

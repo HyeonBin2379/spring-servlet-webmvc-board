@@ -13,10 +13,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDeleteServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostSaveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostSaveServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostUpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,6 +137,7 @@
       <recent name="C:\study\sql\servletExercise" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\study\spring-servlet-webmvc-board\src\main" />
       <recent name="C:\study\spring\board\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -395,7 +395,7 @@
       <workItem from="1761264886248" duration="2531000" />
       <workItem from="1761296994737" duration="495000" />
       <workItem from="1761297995186" duration="5127000" />
-      <workItem from="1761355958319" duration="34157000" />
+      <workItem from="1761355958319" duration="36208000" />
     </task>
     <servers />
   </component>

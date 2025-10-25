@@ -23,6 +23,7 @@ public class PostDeleteServlet extends HttpServlet {
             PostService.INSTANCE.remove(postID, passPhrase);
             resp.sendRedirect("/posts");
         } catch (IllegalArgumentException e) {
+            log.error(e.getMessage());
             req.getSession().setAttribute("error", "deleteError : " + e.getMessage());
             resp.sendRedirect("/posts/view?id=" + postID +"&result=error");
         }
