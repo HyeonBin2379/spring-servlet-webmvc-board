@@ -11,11 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5106b48-66a9-4a2f-95e5-a4a755b66107" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDetailServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostSaveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostSaveServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostUpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -395,7 +391,7 @@
       <workItem from="1761264886248" duration="2531000" />
       <workItem from="1761296994737" duration="495000" />
       <workItem from="1761297995186" duration="5127000" />
-      <workItem from="1761355958319" duration="36208000" />
+      <workItem from="1761355958319" duration="37727000" />
     </task>
     <servers />
   </component>

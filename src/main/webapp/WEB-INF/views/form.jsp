@@ -21,28 +21,13 @@
             </c:if>
         </div>
         <div>
-            <c:if test="${formActionType == 'writeForm'}">
-                <input type="text" name="title" placeholder="제목" required>
-            </c:if>
-            <c:if test="${formActionType == 'editForm'}">
-                <input type="text" name="title" value="${dto.title}" placeholder="제목" required>
-            </c:if>
+            <input type="text" name="title" value="${formActionType == 'editForm' ? dto.title : ''}" placeholder="제목" required>
         </div>
         <div>
-            <c:if test="${formActionType == 'writeForm'}">
-                <input type="text" name="writer" placeholder="작성자" required>
-            </c:if>
-            <c:if test="${formActionType == 'editForm'}">
-                <input type="text" name="writer" value="${dto.writer}" placeholder="작성자" readonly required>
-            </c:if>
+            <input type="text" name="writer" value="${formActionType == 'editForm' ? dto.writer : ''}" placeholder="작성자" readonly required>
         </div>
         <div>
-            <c:if test="${formActionType == 'writeForm'}">
-                <input type="text" name="content" placeholder="내용">
-            </c:if>
-            <c:if test="${formActionType == 'editForm'}">
-                <input type="text" name="content" value="${dto.content}" placeholder="내용">
-            </c:if>
+            <input type="text" name="content" value="${formActionType == 'editForm' ? dto.content : ''}" placeholder="작성자" readonly required>
         </div>
         <div>
             <input type="password" name="passPhrase" placeholder="게시글 비밀번호" autocomplete="false" required>
