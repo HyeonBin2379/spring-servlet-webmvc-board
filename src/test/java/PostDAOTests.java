@@ -71,4 +71,11 @@ public class PostDAOTests {
         long postID = 3L;
         Assertions.assertTrue(dao.delete(postID));
     }
+
+    @Test
+    public void testCheckPassPhrase() throws Exception {
+        long postID = 1L;
+        String passPhrase = "1234";
+        Assertions.assertTrue(dao.checkPassphrase(postID, passPhrase));
+    }
 }

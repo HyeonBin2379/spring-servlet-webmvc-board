@@ -10,11 +10,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5106b48-66a9-4a2f-95e5-a4a755b66107" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/PostServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostEditFormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostEditFormServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostNewFormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostNewFormServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostSaveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostSaveServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostUpdateServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PostDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostDAOTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +103,7 @@
     "Gradle.ConnectionTests.testConnection.executor": "Run",
     "Gradle.ConnectionTests.testHikariCP.executor": "Run",
     "Gradle.PostDAOTests.executor": "Run",
+    "Gradle.PostDAOTests.testCheckPassPhrase.executor": "Run",
     "Gradle.PostDAOTests.testDelete.executor": "Run",
     "Gradle.PostDAOTests.testFindAll.executor": "Run",
     "Gradle.PostDAOTests.testFindById.executor": "Run",
@@ -111,7 +121,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/study/spring-servlet-webmvc-board",
+    "last_opened_file_path": "C:/study/spring-servlet-webmvc-study",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -143,8 +153,8 @@
       <recent name="com.ssg.board.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PostServiceTests.testRemove">
-    <configuration name="PostDAOTests.testFindById2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PostDAOTests.testDelete">
+    <configuration name="PostDAOTests.testCheckPassPhrase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -157,7 +167,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PostDAOTests.testFindById2&quot;" />
+            <option value="&quot;PostDAOTests.testCheckPassPhrase&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -168,7 +178,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PostServiceTests.testGetDetails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostDAOTests.testDelete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -181,7 +191,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PostServiceTests.testGetDetails&quot;" />
+            <option value="&quot;PostDAOTests.testDelete&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -356,20 +366,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.PostDAOTests.testFindById2" />
-      <item itemvalue="Gradle.PostServiceTests.testGetDetails" />
+      <item itemvalue="Gradle.PostDAOTests.testCheckPassPhrase" />
       <item itemvalue="Gradle.PostServiceTests.testRemove" />
       <item itemvalue="Gradle.PostServiceTests.testUpdate" />
       <item itemvalue="Gradle.PostServiceTests.testWrite" />
+      <item itemvalue="Gradle.PostDAOTests.testDelete" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.111" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PostDAOTests.testDelete" />
+        <item itemvalue="Gradle.PostDAOTests.testCheckPassPhrase" />
         <item itemvalue="Gradle.PostServiceTests.testRemove" />
         <item itemvalue="Gradle.PostServiceTests.testUpdate" />
         <item itemvalue="Gradle.PostServiceTests.testWrite" />
-        <item itemvalue="Gradle.PostDAOTests.testFindById2" />
-        <item itemvalue="Gradle.PostServiceTests.testGetDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +403,7 @@
       <workItem from="1761264886248" duration="2531000" />
       <workItem from="1761296994737" duration="495000" />
       <workItem from="1761297995186" duration="5127000" />
-      <workItem from="1761355958319" duration="5071000" />
+      <workItem from="1761355958319" duration="30055000" />
     </task>
     <servers />
   </component>

@@ -72,17 +72,22 @@ public enum PostDAOImpl implements PostDAO {
     public long save(PostVO post) {
         String sql = "insert into board_post(title, content, writer, passPhrase) values(?, ?, ?, ?)";
         try (Connection connection = DBUtil.INSTANCE.getConnection();
-             PreparedStatement pstmt = connection.prepareStatement(sql)) {
+             PreparedStatement pstmt = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             pstmt.setString(1, post.getTitle());
             pstmt.setString(2, post.getContent());
             pstmt.setString(3, post.getWriter());
             pstmt.setString(4, post.getPassphrase());
 
             int affected = pstmt.executeUpdate();
-            return affected > 0 ? post.getPostId() : -1;
+            if (affected > 0) {
+                ResultSet rs = pstmt.getGeneratedKeys();
+                rs.next();
+                return rs.getLong(1);
+            }
+            return -1;
         } catch (Exception e) {
             log.error(e.getMessage());
-            return -1;
+            throw new IllegalArgumentException("post save error...");
         }
     }
 
@@ -99,7 +104,7 @@ public enum PostDAOImpl implements PostDAO {
             return affected > 0;
         } catch (Exception e) {
             log.error(e.getMessage());
-            return false;
+            throw new IllegalArgumentException("post update error...");
         }
     }
 
@@ -114,7 +119,7 @@ public enum PostDAOImpl implements PostDAO {
             return affected > 0;
         } catch (Exception e) {
             log.error(e.getMessage());
-            return false;
+            throw new IllegalArgumentException("post delete error...");
         }
     }
 
@@ -131,7 +136,7 @@ public enum PostDAOImpl implements PostDAO {
             }
         } catch (Exception e) {
             log.error(e.getMessage());
-            return false;
+            throw new IllegalArgumentException("checkPassphrase error...");
         }
     }
 }

@@ -9,13 +9,19 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
+    <meta charset="UTF-8" />
     <title>Post List</title>
 </head>
 <body>
     <h1>Post List Page</h1>
     <ul>
-        <c:forEach var="dto" items="${list}">
-            <li>${dto}</li>
+        <c:forEach var="dto" items="${dtoList}">
+            <li>
+                ${dto.postId}
+                <a href="posts/view?id=${dto.postId}">${dto.title}</a>
+                ${dto.writer}
+                ${dto.createdAt}
+            </li>
         </c:forEach>
     </ul>
     <button type="button" onclick="location.href='posts/new'">글쓰기</button>
