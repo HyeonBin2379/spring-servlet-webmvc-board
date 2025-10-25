@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 테스트 코드에서도 Log4j2를 사용하기 위해 log4j2.xml 파일을 추가 -->
-<Configuration status="WARN">
+<Configuration status="INFO">
     <Appenders>
-        <Console name="CONSOLE" target="SYSTEM_OUT">
+        <Console name="CONSOLE">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
 
     </Appenders>
     <Loggers>
-        <Root level="INFO">
+        <Root level="DEBUG">
             <AppenderRef ref="CONSOLE"/>
         </Root>
     </Loggers>

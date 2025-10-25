@@ -1,8 +1,6 @@
 package com.ssg.board.controller;
 
 import com.ssg.board.service.PostService;
-import java.util.HashMap;
-import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -25,8 +23,8 @@ public class PostDeleteServlet extends HttpServlet {
             PostService.INSTANCE.remove(postID, passPhrase);
             resp.sendRedirect("/posts");
         } catch (IllegalArgumentException e) {
-            req.setAttribute("error", e.getMessage());
-            req.getRequestDispatcher("/posts/view?id="+postID+"&result=error").forward(req, resp);
+            req.getSession().setAttribute("error", "deleteError : " + e.getMessage());
+            resp.sendRedirect("/posts/view?id=" + postID +"&result=error");
         }
     }
 }

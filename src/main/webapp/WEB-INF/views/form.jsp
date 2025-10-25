@@ -58,5 +58,11 @@
             </c:if>
         </div>
     </form>
+    <c:if test="${formActionType == 'writeForm'}">
+        <button onclick="location.href='../posts'">이전으로</button>
+    </c:if>
+    <c:if test="${formActionType == 'editForm'}">
+        <button onclick="location.href='../posts/view?id=${dto.postId}'">이전으로</button>
+    </c:if>
 </body>
 </html>

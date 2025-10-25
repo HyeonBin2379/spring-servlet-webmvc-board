@@ -34,8 +34,9 @@
             <input type="datetime-local" name="createdAt" value="${dto.createdAt}" readonly disabled>
         </div>
         <div>
-            <button type="submit" formmethod="get">수정/삭제</button>
+            <button type="submit">수정/삭제</button>
         </div>
     </form>
+    <button onclick="location.href='../posts'">목록</button>
 </body>
 </html>

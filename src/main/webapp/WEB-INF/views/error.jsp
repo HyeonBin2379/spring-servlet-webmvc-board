@@ -17,6 +17,11 @@
     <c:forEach var="entry" items="${errorMap.entrySet()}">
         <p>${entry.getKey()} : ${entry.getValue()}</p>
     </c:forEach>
-    <button onclick="history.back()">뒤로 가기</button>
+    <c:if test="${errorMap.containsKey('saveError')}">
+        <button onclick="location.href='../posts'">뒤로 가기</button>
+    </c:if>
+    <c:if test="${errorMap.containsKey('updateError')}">
+        <button onclick="location.href='../posts/view?id=${id}'">뒤로 가기</button>
+    </c:if>
 </body>
 </html>

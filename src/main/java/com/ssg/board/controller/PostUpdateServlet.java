@@ -41,6 +41,7 @@ public class PostUpdateServlet extends HttpServlet {
         } catch (IllegalArgumentException e) {
             errors.put("updateError", e.getMessage());
             req.setAttribute("errorMap", errors);
+            req.setAttribute("id", postID);
             req.getRequestDispatcher("/WEB-INF/views/error.jsp").forward(req, resp);
         }
     }

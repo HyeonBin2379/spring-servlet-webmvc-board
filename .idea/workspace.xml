@@ -13,18 +13,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDeleteServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostDetailServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostEditFormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostEditFormServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostNewFormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostNewFormServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostSaveServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostSaveServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/controller/PostUpdateServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/service/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PostDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostDAOTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -403,7 +395,7 @@
       <workItem from="1761264886248" duration="2531000" />
       <workItem from="1761296994737" duration="495000" />
       <workItem from="1761297995186" duration="5127000" />
-      <workItem from="1761355958319" duration="30055000" />
+      <workItem from="1761355958319" duration="34157000" />
     </task>
     <servers />
   </component>
