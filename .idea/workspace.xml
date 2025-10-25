@@ -10,16 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5106b48-66a9-4a2f-95e5-a4a755b66107" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/PostServiceTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40304302-4277-460d-8738-69b9eb39b70b.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40304302-4277-460d-8738-69b9eb39b70b/storage_v2/_src_/schema/boardservletdb.XdUmew.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40304302-4277-460d-8738-69b9eb39b70b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40304302-4277-460d-8738-69b9eb39b70b/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40304302-4277-460d-8738-69b9eb39b70b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/40304302-4277-460d-8738-69b9eb39b70b/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/dao/PostDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/util/MapperUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/util/MapperUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssg/board/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssg/board/service/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PostDAOTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PostDAOTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,12 +65,12 @@
     &quot;assignee&quot;: &quot;HyeonBin2379&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/HyeonBin2379/spring-servlet-webmvc-board.git&quot;,
-    &quot;accountId&quot;: &quot;b1fe4153-02cb-4763-839e-5d7a91aac3df&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/HyeonBin2379/spring-servlet-webmvc-board.git",
+    "accountId": "82d58d5d-d37c-47cc-8565-5fbddc0b7948"
   }
-}</component>
+}]]></component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -102,15 +97,21 @@
     "Gradle.PostDAOTests.testDelete.executor": "Run",
     "Gradle.PostDAOTests.testFindAll.executor": "Run",
     "Gradle.PostDAOTests.testFindById.executor": "Run",
+    "Gradle.PostDAOTests.testFindById2.executor": "Run",
     "Gradle.PostDAOTests.testSave.executor": "Run",
     "Gradle.PostDAOTests.testUpdate.executor": "Run",
+    "Gradle.PostServiceTests.testGetDetails.executor": "Run",
+    "Gradle.PostServiceTests.testGetList.executor": "Run",
+    "Gradle.PostServiceTests.testRemove.executor": "Run",
+    "Gradle.PostServiceTests.testUpdate.executor": "Run",
+    "Gradle.PostServiceTests.testWrite.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Tomcat Server.Tomcat 9.0.111.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/study/spring-servlet-webmvc-study",
+    "last_opened_file_path": "C:/study/spring-servlet-webmvc-board",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -142,8 +143,8 @@
       <recent name="com.ssg.board.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PostDAOTests.testDelete">
-    <configuration name="PostDAOTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PostServiceTests.testRemove">
+    <configuration name="PostDAOTests.testFindById2" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -156,7 +157,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PostDAOTests&quot;" />
+            <option value="&quot;PostDAOTests.testFindById2&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,7 +168,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PostDAOTests.testDelete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostServiceTests.testGetDetails" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -180,7 +181,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PostDAOTests.testDelete&quot;" />
+            <option value="&quot;PostServiceTests.testGetDetails&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,7 +192,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PostDAOTests.testFindById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostServiceTests.testRemove" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -204,7 +205,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PostDAOTests.testFindById&quot;" />
+            <option value="&quot;PostServiceTests.testRemove&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -215,7 +216,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PostDAOTests.testSave" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostServiceTests.testUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -228,7 +229,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PostDAOTests.testSave&quot;" />
+            <option value="&quot;PostServiceTests.testUpdate&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -239,7 +240,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PostDAOTests.testUpdate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PostServiceTests.testWrite" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -252,7 +253,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;PostDAOTests.testUpdate&quot;" />
+            <option value="&quot;PostServiceTests.testWrite&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -355,20 +356,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.PostDAOTests" />
-      <item itemvalue="Gradle.PostDAOTests.testDelete" />
-      <item itemvalue="Gradle.PostDAOTests.testFindById" />
-      <item itemvalue="Gradle.PostDAOTests.testSave" />
-      <item itemvalue="Gradle.PostDAOTests.testUpdate" />
+      <item itemvalue="Gradle.PostDAOTests.testFindById2" />
+      <item itemvalue="Gradle.PostServiceTests.testGetDetails" />
+      <item itemvalue="Gradle.PostServiceTests.testRemove" />
+      <item itemvalue="Gradle.PostServiceTests.testUpdate" />
+      <item itemvalue="Gradle.PostServiceTests.testWrite" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.111" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PostDAOTests.testDelete" />
-        <item itemvalue="Gradle.PostDAOTests.testUpdate" />
-        <item itemvalue="Gradle.PostDAOTests.testSave" />
-        <item itemvalue="Gradle.PostDAOTests.testFindById" />
-        <item itemvalue="Gradle.PostDAOTests" />
+        <item itemvalue="Gradle.PostServiceTests.testRemove" />
+        <item itemvalue="Gradle.PostServiceTests.testUpdate" />
+        <item itemvalue="Gradle.PostServiceTests.testWrite" />
+        <item itemvalue="Gradle.PostDAOTests.testFindById2" />
+        <item itemvalue="Gradle.PostServiceTests.testGetDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -392,6 +393,7 @@
       <workItem from="1761264886248" duration="2531000" />
       <workItem from="1761296994737" duration="495000" />
       <workItem from="1761297995186" duration="5127000" />
+      <workItem from="1761355958319" duration="5071000" />
     </task>
     <servers />
   </component>

@@ -122,12 +122,13 @@ public enum PostDAOImpl implements PostDAO {
     public boolean checkPassphrase(long id, String passphrase) {
         String sql = "select * from board_post where post_id = ? and passphrase = ?";
         try (Connection connection = DBUtil.INSTANCE.getConnection();
-             PreparedStatement pstmt = connection.prepareStatement(sql);
-             ResultSet rs = pstmt.executeQuery()) {
+             PreparedStatement pstmt = connection.prepareStatement(sql)) {
             pstmt.setLong(1, id);
             pstmt.setString(2, passphrase);
 
-            return rs != null && rs.next();
+            try (ResultSet rs = pstmt.executeQuery()) {
+                return rs != null && rs.next();
+            }
         } catch (Exception e) {
             log.error(e.getMessage());
             return false;
