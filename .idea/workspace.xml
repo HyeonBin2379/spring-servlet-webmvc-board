@@ -11,6 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5106b48-66a9-4a2f-95e5-a4a755b66107" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/detail.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/form.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,12 +62,12 @@
     &quot;assignee&quot;: &quot;HyeonBin2379&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/HyeonBin2379/spring-servlet-webmvc-board.git",
-    "accountId": "82d58d5d-d37c-47cc-8565-5fbddc0b7948"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/HyeonBin2379/spring-servlet-webmvc-board.git&quot;,
+    &quot;accountId&quot;: &quot;82d58d5d-d37c-47cc-8565-5fbddc0b7948&quot;
   }
-}]]></component>
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -83,48 +84,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build board.executor": "Run",
-    "Gradle.Build spring-servlet-webmvc-board.executor": "Run",
-    "Gradle.ConnectionTests.testConnection.executor": "Run",
-    "Gradle.ConnectionTests.testHikariCP.executor": "Run",
-    "Gradle.PostDAOTests.executor": "Run",
-    "Gradle.PostDAOTests.testCheckPassPhrase.executor": "Run",
-    "Gradle.PostDAOTests.testDelete.executor": "Run",
-    "Gradle.PostDAOTests.testFindAll.executor": "Run",
-    "Gradle.PostDAOTests.testFindById.executor": "Run",
-    "Gradle.PostDAOTests.testFindById2.executor": "Run",
-    "Gradle.PostDAOTests.testSave.executor": "Run",
-    "Gradle.PostDAOTests.testUpdate.executor": "Run",
-    "Gradle.PostServiceTests.testGetDetails.executor": "Run",
-    "Gradle.PostServiceTests.testGetList.executor": "Run",
-    "Gradle.PostServiceTests.testRemove.executor": "Run",
-    "Gradle.PostServiceTests.testUpdate.executor": "Run",
-    "Gradle.PostServiceTests.testWrite.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Tomcat Server.Tomcat 9.0.111.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/study/spring-servlet-webmvc-study",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build board.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build spring-servlet-webmvc-board.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConnectionTests.testConnection.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.ConnectionTests.testHikariCP.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostDAOTests.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostDAOTests.testCheckPassPhrase.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostDAOTests.testDelete.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostDAOTests.testFindAll.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostDAOTests.testFindById.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostDAOTests.testFindById2.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostDAOTests.testSave.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostDAOTests.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostServiceTests.testGetDetails.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostServiceTests.testGetList.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostServiceTests.testRemove.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostServiceTests.testUpdate.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.PostServiceTests.testWrite.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 9.0.111.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/study/spring-servlet-webmvc-study&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\study\spring\board\src\test\resources" />
@@ -141,7 +142,7 @@
       <recent name="com.ssg.board.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PostDAOTests.testDelete">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.111">
     <configuration name="PostDAOTests.testCheckPassPhrase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -391,7 +392,8 @@
       <workItem from="1761264886248" duration="2531000" />
       <workItem from="1761296994737" duration="495000" />
       <workItem from="1761297995186" duration="5127000" />
-      <workItem from="1761355958319" duration="37727000" />
+      <workItem from="1761355958319" duration="39210000" />
+      <workItem from="1761485222239" duration="315000" />
     </task>
     <servers />
   </component>
