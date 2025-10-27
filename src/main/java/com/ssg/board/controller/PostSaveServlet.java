@@ -47,19 +47,19 @@ public class PostSaveServlet extends HttpServlet {
         Map<String, String> errors = new HashMap<>();
 
         if (!written.getTitle().trim().matches(".{2,200}")) {
-            errors.put("title", "게시글 제목의 길이가 유효하지 않습니다.");
+            errors.put("titleError", "게시글 제목의 길이가 유효하지 않습니다.");
             log.error(errors.get("title"));
         }
         if (!written.getWriter().trim().matches(".{1,50}")) {
-            errors.put("writer", "작성자의 길이가 유효하지 않습니다.");
+            errors.put("writerError", "작성자의 길이가 유효하지 않습니다.");
             log.error(errors.get("writer"));
         }
         if (!written.getContent().trim().matches(".{5,}")) {
-            errors.put("content", "내용의 길이가 유효하지 않습니다.");
+            errors.put("contentError", "내용의 길이가 유효하지 않습니다.");
             log.error(errors.get("content"));
         }
         if (!written.getPassphrase().matches(".{4,20}")) {
-            errors.put("passPhrase", "비밀번호의 길이가 유효하지 않습니다.");
+            errors.put("passPhraseError", "비밀번호의 길이가 유효하지 않습니다.");
             log.error(errors.get("passPhrase"));
         }
 

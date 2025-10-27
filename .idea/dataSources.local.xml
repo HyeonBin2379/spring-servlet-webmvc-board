@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-243.26574.91">
-    <data-source name="boardServletDB" uuid="3f73c290-2cf7-46db-b8a6-c29c3e317b39">
+    <data-source name="boardservletdb" uuid="40304302-4277-460d-8738-69b9eb39b70b">
       <database-info product="MySQL" version="8.0.22" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" dbms="MYSQL" exact-version="8.0.22" exact-driver-version="8.2">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
@@ -12,8 +12,8 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
-            <name qname="boardservletdb" />
             <name qname="@" />
+            <name qname="boardservletdb" />
           </node>
         </introspection-scope>
       </schema-mapping>
